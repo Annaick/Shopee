@@ -1,0 +1,86 @@
+.header, .footer{
+    height: 50vh;
+}
+nav{
+    background-color: var(--bg);
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+body{
+    background-color: var(--bg);
+}
+section{
+    padding: 2rem 2rem;
+    margin-bottom: 3rem;
+}
+.header, .touch{
+    background-image: url('/header-pic.jpg');
+    background-origin: border-box;
+    background-color: rgb(36, 35, 37);
+    background-blend-mode: color-dodge;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+}
+header{
+    margin-top: 2rem;
+}
+
+.main{
+    height: auto;
+}
+
+.touch{
+    background-image: url('/footer-pic.jpg');
+    height: 30vh;
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .heading{
+        color: #FF3B37;
+        margin: 0px;
+    }
+    .content{
+        color: white;
+        font-size: 0.5rem;
+    }
+}
+.footer{
+    height: auto;
+}
+
+.slider{
+    border: none !important;
+    border-radius: 1rem 1rem;
+}
+.slider-container{
+    height: 200px;
+    box-sizing: border-box;
+    display: flex !important;
+    flex-direction: column;
+    row-gap: 20px;
+    flex-wrap: wrap;
+    color: white;
+    background-color: #202022;
+    padding: 1rem 1rem;
+
+    h4{
+        font-size: large;
+    }
+    
+}
+
+.carousel-container{
+    border-radius: 1rem 1rem;
+    overflow: hidden;
+}
+
+.ant-carousel .slick-dots li button{
+    background-color: #fff;
+}
+.ant-carousel .slick-dots li.slick-active button{
+    background-color: #FF3B37;
+}
