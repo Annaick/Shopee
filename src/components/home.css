@@ -9,7 +9,7 @@ nav{
 }
 body{
     background-color: var(--bg);
-    background-image: linear-gradient(to right, rgb(0, 183, 255, 0.1), rgba(111, 0, 255, 0.1));
+    background-image: linear-gradient(to right, rgba(0, 183, 255, 0.048), rgba(111, 0, 255, 0.041));
 }
 section{
     padding: 2rem 2rem;

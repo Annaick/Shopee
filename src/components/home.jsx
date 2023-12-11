@@ -15,19 +15,10 @@ export default function Home (){
         </Flex>
      </section>
      <section className="main">
-        <Flex vertical justify='space-between' gap={50} style={{height: "100%"}}>
-            <Row gutter={6}  align='middle'>
-                <Col span={14}><Title style={{color: '#616161'}} level={3}>A'NNAICK MISSION</Title></Col>
-                <Col span={8}><Image alt='Asus Rog photo' src='/rog.png'></Image></Col>
-            </Row>
-            <Row justify='space-between' align='middle'>
-                <Col span={8}><Image alt='Asus Rog photo' src='/clothing.png'></Image></Col>
-                <Col span={14}><Text style={{color: '#616161'}}>A'nnaick is an online shop who offers the best products for everybody's need.  </Text></Col>
-            </Row>
-            <Row gutter={2} justify={'space-between'} align={'middle'}>
-                <Col span={14}><Text style={{color: '#616161'}}>You can find everything you want here at a competitive price and we make sure you'll be more than satisfied</Text></Col>
-                <Col span={8}><Image alt='Asus Rog photo' src='/ring.png'></Image></Col>
-            </Row>
+        <Flex vertical justify='space-between' align='center' gap={50} style={{height: "100%"}}>
+            <Title style={{color: '#616161'}} level={3}>A'NNAICK MISSION</Title>
+            <Text style={{color: '#616161'}}>A'nnaick is an online shop who offers the best products for everybody's need.  </Text>
+            <Text style={{color: '#616161'}}>You can find everything you want here at a competitive price and we make sure you'll be more than satisfied</Text>
         </Flex>
      </section>
      <section className="footer">
@@ -56,21 +47,21 @@ export default function Home (){
         <Row gutter={4} style={{marginBottom: '20px'}}>
             <Col style={{textAlign: 'center'}} span={12}>
                 <Title className='heading' level={5}>Email adress</Title>
-                <Text className='content'>shop.annaick@gmail.com</Text>
+                <Text copyable className='content'>shop.annaick@gmail.com</Text>
             </Col>
             <Col span={12} style={{textAlign: 'center'}}>
                 <Title className='heading' level={5}>Phone number</Title>
-                <Text className='content'>+261 34 43 441 07</Text>
+                <Text copyable className='content'>+261 34 43 441 07</Text>
             </Col>
         </Row>
         <Row gutter={4} style={{marginBottom: '20px', textAlign: 'center'}}>
             <Col span={12}>
                 <Title className='heading' level={5}>Adress</Title>
-                <Text className='content'>Ankofafa/Fianarantsoa</Text>
+                <Text copyable className='content'>Ankofafa/Fianarantsoa</Text>
             </Col>
             <Col span={12}>
                 <Title className='heading' level={5}>Facebook</Title>
-                <Text className='content'>shop.annaick</Text>
+                <Text copyable className='content'>shop.annaick</Text>
             </Col>
         </Row>
         
