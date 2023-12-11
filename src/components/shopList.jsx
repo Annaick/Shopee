@@ -44,7 +44,7 @@ export function ShopList (prop){
      <List loading={prop.productLoading? true: false} className='list' pagination={{pageSize: 10, align: 'center', total: prop.size }} size='small' grid={{column: 2, gutter: 2, lg: 3, md: 3, xl: 4}} itemLayout='vertical'dataSource={prop.products} renderItem={(item)=>{
       return (<Badge.Ribbon style={{marginRight: '5%', display: (item.added && item.visible)? 'block': 'none'}} text='added'  color='#3bb58c'>
         <><Link to={`/shop/${item.id}`}>
-      <Card  style={{marginBottom: '15px'}} key={item.id} size='small' className='card' cover={<div style={{overflow: 'hidden', height:'130px', display:'flex', justifyContent: 'center'}}><img loading='lazy'  src={item.image}></img></div>} title={item.title} >
+      <Card  style={{marginBottom: '15px', height: '280px'}} key={item.id} size='small' className='card' cover={<div style={{overflow: 'hidden', height:'130px', display:'flex', justifyContent: 'center'}}><img loading='lazy'  src={item.image}></img></div>} title={item.title} >
         <Meta  title={`${item.price}$`} description={truncate(item.description)}></Meta>
       </Card>
       

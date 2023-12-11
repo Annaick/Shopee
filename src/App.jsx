@@ -26,7 +26,7 @@ function App() {
     setFinalCategories ([{label: 'all', value: ' '}, ...fetchedCategories])
   }, [categories])
   const [finalCategories, setFinalCategories] = useState ([{label: 'all', value: ' '}])
-  const [categorieValue, setCategorieValue] = useState ('')
+  const [categorieValue, setCategorieValue] = useState (' ')
   const [productLoading, setProductLoading] = useState(false)
   const [products, setProducts] = useState ([])
   const [finalProducts, setFinalProducts] = useState ([])
@@ -139,7 +139,7 @@ function App() {
         </nav>
           <Routes>
             <Route path='/contact' element={<Contact></Contact>} ></Route>
-            <Route path='/bag' element={<Bag number = {number} total={total} list={finalProducts} setList = {setProducts} setFinalList = {setFinalProducts}></Bag>} ></Route>
+            <Route path='/bag' element={<Bag number = {number} total={total} setCategory={setCategorieValue} list={finalProducts} setList = {setProducts} setFinalList = {setFinalProducts}></Bag>} ></Route>
             <Route path='/shop' element={<Shop></Shop>}>
               <Route index element={<ShopList size={size} categories={finalCategories} category={categorieValue}  setCategorieValue={setCategorieValue} setFinalProducts={setFinalProducts} finalProducts={finalProducts} products={products} setProducts={setProducts}  productLoading={productLoading} loading={loading}></ShopList>}></Route>
               <Route path=':slug' element={<Item total={total} products={finalProducts} setProducts={setProducts} setFinalProducts={setFinalProducts} ></Item>}></Route>

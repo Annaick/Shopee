@@ -52,18 +52,18 @@ export default function Home (){
         </Flex>
      </section>
      <div className='touch'>
-        <Title level={3} style={{color: '#fff'}}>GET IN TOUCH</Title>
+        <Title level={3} style={{color: '#fff', textAlign: 'center', marginBottom: '50px'}}>GET IN TOUCH</Title>
         <Row gutter={4} style={{marginBottom: '20px'}}>
-            <Col span={12}>
+            <Col style={{textAlign: 'center'}} span={12}>
                 <Title className='heading' level={5}>Email adress</Title>
                 <Text className='content'>shop.annaick@gmail.com</Text>
             </Col>
-            <Col span={12}>
+            <Col span={12} style={{textAlign: 'center'}}>
                 <Title className='heading' level={5}>Phone number</Title>
                 <Text className='content'>+261 34 43 441 07</Text>
             </Col>
         </Row>
-        <Row gutter={4} style={{marginBottom: '20px'}}>
+        <Row gutter={4} style={{marginBottom: '20px', textAlign: 'center'}}>
             <Col span={12}>
                 <Title className='heading' level={5}>Adress</Title>
                 <Text className='content'>Ankofafa/Fianarantsoa</Text>

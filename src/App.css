@@ -6,9 +6,8 @@
 *{
     margin: 0px;
 }
-
-.ant-menu-title-content{
-    display: flex !important;
+ant-menu-title-content{
+    pointer-events: none;
 }
 
 .navigation{

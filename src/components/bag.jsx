@@ -21,10 +21,11 @@ export default function Bag (prop){
     prop.setFinalList(newList)
   }
   function pay (){
-    message.success ('Clicked! you paid ' + prop.total + 'Imaginary dollars')
+    message.success ('Clicked! you paid ' + prop.total + ' imaginary dollars')
     const reseted = prop.list.map((item)=> {return {...item, added: false}})
     prop.setList (reseted)
     prop.setFinalList(reseted)
+    prop.setCategory (' ')
   }
    return (<>
     <div className="bag">
