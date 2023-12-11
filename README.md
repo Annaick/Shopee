@@ -2,7 +2,7 @@
 **Project Description**   
 This is my e-commerce project built with [React](https://reactjs.org/), [Ant Design](https://ant.design) and [FakeStore](https://fakestoreapi.com) API
   
->  Preview it [here](https://Annaick.github.io/shop)
+>  Preview it [here](https://Annaick.github.io/Shopee)
   
 ## Table of contents 
 - [Overview](#overview)
@@ -24,7 +24,7 @@ The application is fully **responsive** and **accessible** thanks to ant Design 
 *Mobile* 
 
 ### Preview
-- Live Site: Click [here](https://Annaick.github.io/shop)  
+- Live Site: Click [here](https://Annaick.github.io/Shopee)  
 
 ###  Built with
 - [Vite](https://vitejs.dev) as Build tool
