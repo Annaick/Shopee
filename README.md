@@ -1,4 +1,4 @@
-# Shop 
+# Shopee 
 **Project Description**   
 This is my e-commerce project built with [React](https://reactjs.org/), [Ant Design](https://ant.design) and [FakeStore](https://fakestoreapi.com) API
   
