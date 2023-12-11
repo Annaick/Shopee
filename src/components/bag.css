@@ -1,14 +1,12 @@
-.shop{
+.bag{
     padding: 4rem 1rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
+
 .list{
     width: 100%;
-    margin-left: 2.5% !important;
-    justify-content: center;
+    padding-right: 2%;
 }
 
 .ant-row{
@@ -22,6 +20,7 @@
     box-shadow: 3px 3px 10px 2px rgb(184, 184, 184);
 }
 
-.ant-card-head{
-    border: none;
+.info{
+    margin: 0px !important;
+    font-size: 1.2rem !important;
 }

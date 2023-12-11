@@ -9,19 +9,23 @@ nav{
 }
 body{
     background-color: var(--bg);
+    background-image: linear-gradient(to right, rgb(0, 183, 255, 0.1), rgba(111, 0, 255, 0.1));
 }
 section{
     padding: 2rem 2rem;
     margin-bottom: 3rem;
 }
-.header, .touch{
-    background-image: url('/header-pic.jpg');
+.header{
+    background-image: url('/shop.png');
     background-origin: border-box;
     background-color: rgb(36, 35, 37);
-    background-blend-mode: color-dodge;
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto 100%;
+    background-position: bottom right;
+    background-size: auto 40%;
+    @media screen and (min-width: 750px) {
+        background-size: auto 70%;
+        padding: 4rem;
+    }
 }
 header{
     margin-top: 2rem;
@@ -29,10 +33,11 @@ header{
 
 .main{
     height: auto;
+    text-align: center;
 }
 
 .touch{
-    background-image: url('/footer-pic.jpg');
+    background-color: rgb(36, 35, 37);
     height: 30vh;
     padding: 2rem 2rem;
     display: flex;
@@ -40,7 +45,7 @@ header{
     justify-content: center;
 
     .heading{
-        color: #FF3B37;
+        color: #3bb58c;
         margin: 0px;
     }
     .content{
@@ -63,8 +68,10 @@ header{
     flex-direction: column;
     row-gap: 20px;
     flex-wrap: wrap;
-    color: white;
-    background-color: #202022;
+    color: rgb(53, 51, 51);
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
     padding: 1rem 1rem;
 
     h4{
@@ -79,8 +86,8 @@ header{
 }
 
 .ant-carousel .slick-dots li button{
-    background-color: #fff;
+    background-color: #353535;
 }
 .ant-carousel .slick-dots li.slick-active button{
-    background-color: #FF3B37;
+    background-color: #3bb58c;
 }

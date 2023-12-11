@@ -8,45 +8,44 @@ const {Title, Text, Paragraph} = Typography
 export default function Home (){
     return (<>
      <section className="header">
-        <Flex justify='space-around' dir='vertical' vertical gap={25} style={{padding:'2rem 2rem', height:'100%'}}>
-            <img src="/logo.svg" alt="A'nnaick logo"  style={{width: '30px', height: 'auto'}}/>
-            <Title style={{color: '#FFF'}} level={1}>LET'S GET YOU <span style={{color: '#FF3B37'}}>ON NEXT LEVEL</span></Title>
-            <Link to='/shop'><Button size='large' type='primary' icon={<ArrowRightOutlined></ArrowRightOutlined>}>Shop</Button></Link>
+        <Flex justify='space-around' dir='vertical' vertical gap={25} style={{ height:'100%'}}>
+            <div></div>
+            <Title style={{color: '#FFF'}} level={1}>LET'S GET YOU <span style={{color: '#3bb58c'}}>ON NEXT LEVEL</span></Title>
+            <Link to='/shop'><Button style={{backgroundColor: '#3bb58c'}} size='large' type='primary' icon={<ArrowRightOutlined></ArrowRightOutlined>}>Shop</Button></Link>
         </Flex>
      </section>
      <section className="main">
         <Flex vertical justify='space-between' gap={50} style={{height: "100%"}}>
-            <Row justify={'space-between'} align='middle'>
-                <Col span={10}><Title style={{fontWeight: '200'}} level={3}>A'NNAICK MISSION</Title></Col>
+            <Row gutter={6}  align='middle'>
+                <Col span={14}><Title level={3}>A'NNAICK MISSION</Title></Col>
                 <Col span={8}><Image alt='Asus Rog photo' src='/rog.png'></Image></Col>
             </Row>
             <Row justify='space-between' align='middle'>
-                <Col span={8}><Image alt='Asus Rog photo' src='/alienware.png'></Image></Col>
-                <Col span={10}><Text>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus vel dignissimos </Text></Col>
+                <Col span={8}><Image alt='Asus Rog photo' src='/clothing.png'></Image></Col>
+                <Col span={14}><Text>A'nnaick is an online shop who offers the best products for everybody's need.  </Text></Col>
             </Row>
-            <Row justify={'space-between'} align={'middle'}>
-                <Col span={10}><Text>Laudantium recusandae facilis illum nesciunt, cupiditate temporibus ipsa! Necessitatibus magni quo velit</Text></Col>
-                <Col span={8}><Image alt='Asus Rog photo' src='/msi.png'></Image></Col>
+            <Row gutter={2} justify={'space-between'} align={'middle'}>
+                <Col span={14}><Text>You can find everything you want here at a competitive price and we make sure you'll be more than satisfied</Text></Col>
+                <Col span={8}><Image alt='Asus Rog photo' src='/ring.png'></Image></Col>
             </Row>
         </Flex>
      </section>
      <section className="footer">
         <Flex vertical gap={10}>
-            <Title level={3} style={{color: '#FF3B37'}}>CLIENT STORIES</Title>
-
+            <Title level={3} style={{color: '#3bb58c'}}>CLIENT STORIES</Title>
             <div className='carousel-container'>
                 <Carousel effect='scrollx' waitForAnimate autoplay className='slider'>
                 <div className='slider-container'>
                     <h4>Toky Randria</h4>
-                    <p>I've been looking for a good computer for my everyday gaming session and finally I found it, I'm really satisfied</p>
+                    <p style={{textAlign: 'center'}}>I've been looking for a good computer for my everyday gaming session and finally I found it, I'm really satisfied</p>
                 </div>
                 <div className='slider-container'>
                     <h4>Sarindra Fitia</h4>
-                    <p>They helped me to find the perfect computer for my son's birthday present. I didn't know it could be not so expensive</p>
+                    <p style={{textAlign: 'center'}}>They helped me to find the perfect computer for my son's birthday present. I didn't know it could be not so expensive</p>
                 </div>
                 <div className='slider-container'>
                     <h4>Tiana A.</h4>
-                    <p>Nice plateform. we can find everything we want and they assist you with everything. Thank you I'm satisfied</p>
+                    <p style={{textAlign: 'center'}}>Nice plateform. we can find everything we want and they assist you with everything. Thank you I'm satisfied</p>
                 </div>
                 </Carousel>
             </div>

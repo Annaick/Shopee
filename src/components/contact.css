@@ -1,12 +1,13 @@
 .contact{
     height: 100vh;
     background-color: rgb(161, 154, 154);
-    background-image: linear-gradient(to right, rgb(0, 183, 255, 0.3), rgba(111, 0, 255, 0.3));
+    background-image: linear-gradient(to right, rgb(0, 183, 255, 0.2), rgba(111, 0, 255, 0.2));
 }
 
 .form{
     border-radius: 1rem 1rem;
     width: 90vw;
+    max-width: 500px;
     height: auto;
     background-color: rgb(255, 255, 255);
     box-sizing: border-box;

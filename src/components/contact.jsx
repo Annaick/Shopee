@@ -18,7 +18,7 @@ export default function Contact (){
                <Input.TextArea className='userInput' placeholder='Message'></Input.TextArea>
             </Form.Item>
             <Form.Item>
-               <Button htmlType='submit' shape='round' type='primary'>Send Email</Button>
+               <Button size='large' style={{backgroundColor: '#3bb58c'}} htmlType='submit' type='primary'>Send Email</Button>
             </Form.Item>
          </Form>
      </Flex>
