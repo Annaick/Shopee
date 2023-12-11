@@ -31,6 +31,7 @@ function App() {
   const [products, setProducts] = useState ([])
   const [finalProducts, setFinalProducts] = useState ([])
   const [size, setSize] = useState (10)
+  const [error, setError] = useState (false)
 
   useEffect (()=>{setSize(finalProducts.length)}, [finalProducts])
 
@@ -47,8 +48,10 @@ function App() {
       }else{
         console.error ("error: " + answer.status)
       }
+      setError (false)
     }catch(e){
       console.error ("error: " + e)
+      setError (true)
     }finally{
       setProductLoading (false)
     }
@@ -78,9 +81,11 @@ function App() {
       }else{
         console.error("errer " + answer.status)
       }
+      setError (false)
     }
     catch (e){
       console.error(e.message)
+      setError (true)
     }
     finally{
       setLoading (false)
@@ -121,7 +126,7 @@ function App() {
     },
     {
       key: '/bag',
-      label: <Badge color='#3bb58c' count={number} ><Link style={{display: 'block', height: '100%', width: '100%'}} to='/bag'><Button type='link' icon={<HomeOutlined></HomeOutlined>}>Bag</Button></Link></Badge>
+      label: <Badge  color='#3bb58c' style={{top:'8px'}} count={number} ><Link style={{display: 'block', height: '100%', width: '100%'}} to='/bag'><Button type='link' icon={<HomeOutlined></HomeOutlined>}>Bag</Button></Link></Badge>
     },
     {
       key: '/contact',
@@ -141,7 +146,7 @@ function App() {
             <Route path='/contact' element={<Contact></Contact>} ></Route>
             <Route path='/bag' element={<Bag number = {number} total={total} setCategory={setCategorieValue} list={finalProducts} setList = {setProducts} setFinalList = {setFinalProducts}></Bag>} ></Route>
             <Route path='/shop' element={<Shop></Shop>}>
-              <Route index element={<ShopList size={size} categories={finalCategories} category={categorieValue}  setCategorieValue={setCategorieValue} setFinalProducts={setFinalProducts} finalProducts={finalProducts} products={products} setProducts={setProducts}  productLoading={productLoading} loading={loading}></ShopList>}></Route>
+              <Route index element={<ShopList error={error} fetchC={fetchCategories} fetchP={fetchProducts} size={size} categories={finalCategories} category={categorieValue}  setCategorieValue={setCategorieValue} setFinalProducts={setFinalProducts} finalProducts={finalProducts} products={products} setProducts={setProducts}  productLoading={productLoading} loading={loading}></ShopList>}></Route>
               <Route path=':slug' element={<Item total={total} products={finalProducts} setProducts={setProducts} setFinalProducts={setFinalProducts} ></Item>}></Route>
             </Route>
             <Route path='/' element={<Home />}></Route>

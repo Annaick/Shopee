@@ -34,7 +34,9 @@ header{
 .main{
     height: auto;
     text-align: center;
+    color: #616161;
 }
+
 
 .touch{
     background-color: rgb(36, 35, 37);

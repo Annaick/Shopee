@@ -17,15 +17,15 @@ export default function Home (){
      <section className="main">
         <Flex vertical justify='space-between' gap={50} style={{height: "100%"}}>
             <Row gutter={6}  align='middle'>
-                <Col span={14}><Title level={3}>A'NNAICK MISSION</Title></Col>
+                <Col span={14}><Title style={{color: '#616161'}} level={3}>A'NNAICK MISSION</Title></Col>
                 <Col span={8}><Image alt='Asus Rog photo' src='/rog.png'></Image></Col>
             </Row>
             <Row justify='space-between' align='middle'>
                 <Col span={8}><Image alt='Asus Rog photo' src='/clothing.png'></Image></Col>
-                <Col span={14}><Text>A'nnaick is an online shop who offers the best products for everybody's need.  </Text></Col>
+                <Col span={14}><Text style={{color: '#616161'}}>A'nnaick is an online shop who offers the best products for everybody's need.  </Text></Col>
             </Row>
             <Row gutter={2} justify={'space-between'} align={'middle'}>
-                <Col span={14}><Text>You can find everything you want here at a competitive price and we make sure you'll be more than satisfied</Text></Col>
+                <Col span={14}><Text style={{color: '#616161'}}>You can find everything you want here at a competitive price and we make sure you'll be more than satisfied</Text></Col>
                 <Col span={8}><Image alt='Asus Rog photo' src='/ring.png'></Image></Col>
             </Row>
         </Flex>
